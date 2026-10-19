@@ -1,0 +1,116 @@
+{
+  "product": "控油洗发水",
+  "sellingPoints": ["一泵起泡", "洗完三天不油", "控油蓬松"],
+  "platform": "douyin",
+  "aspectRatio": "9:16",
+  "promptLang": "zh",
+  "targetSeconds": 32,
+  "researchRef": "洗发水-research.json",
+  "params": {
+    "charsPerSecond": 4.5,
+    "actionSeconds": 2.5,
+    "tolerance": 0.15,
+    "maxLineChars": 35,
+    "hookWindow": 3,
+    "maxSegmentSeconds": 15,
+    "minCutSeconds": 2,
+    "maxCutSeconds": 5,
+    "maxOnScreen": 3
+  },
+  "stages": [
+    { "id": "hook", "label": "黄金3秒钩子", "goal": "2秒不退", "desc": "痛点直击，运动中给" },
+    { "id": "conflict", "label": "放大冲突", "goal": "5秒完播", "desc": "放大成具体困境" },
+    { "id": "solution", "label": "解法转折", "goal": "完播钩子", "desc": "抛出人设/悬念" },
+    { "id": "product", "label": "产品登场", "goal": "卖点可视化", "desc": "产品出场+卖点演示" },
+    { "id": "trust", "label": "信任锚点", "goal": "转化信任", "desc": "对比/背书/价格锚" },
+    { "id": "cta", "label": "升华+行动召唤", "goal": "整体完播+转化", "desc": "升华+引导下单" }
+  ],
+  "beats": [
+    { "stage": "hook", "action": "女生甩头，发丝油腻打绺。" },
+    { "stage": "hook", "speaker": "C01", "line": "三天没洗的头，见人都不敢抬头。", "delivery": "压低声音" },
+    { "stage": "conflict", "action": "同事捂鼻挪开半步。" },
+    { "stage": "conflict", "speaker": "C01", "line": "油头塌扁，整个人显脏十岁。", "delivery": "自嘲" },
+    { "stage": "solution", "action": "她从包里掏出一瓶洗发水。" },
+    { "stage": "solution", "speaker": "C01", "line": "直到换了这瓶控油洗发水。", "delivery": "转折" },
+    { "stage": "product", "action": "泵头一按，泡沫丰盈裹住发丝。" },
+    { "stage": "product", "speaker": "C01", "line": "一泵起泡，洗完三天不油。", "delivery": "展示" },
+    { "stage": "trust", "action": "左右分屏：前一天 vs 第三天。" },
+    { "stage": "trust", "speaker": "C02", "line": "同事实测，油头真的不塌了。", "delivery": "背书" },
+    { "stage": "cta", "action": "她对着镜头举起瓶子笑。" },
+    { "stage": "cta", "speaker": "C01", "line": "点左下，今天还有活动价。", "delivery": "引导" }
+  ],
+  "segments": [
+    {
+      "id": "E01-01",
+      "blocking": "女生在画面左，浴室镜在右。",
+      "cuts": [
+        {
+          "beats": [1, 2], "seconds": 5, "size": "medium", "camera": "Static",
+          "characters": ["C01"], "frame": "中景：女生在明亮浴室甩头，发丝油腻打绺。",
+          "shot": "女生甩头展示油头，镜头固定。",
+          "lens": "50mm 标准，中浅景深", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "女生上半身", "stability": "stable"
+        }
+      ]
+    },
+    {
+      "id": "E01-02",
+      "blocking": "女生在画面左，同事在右侧。",
+      "cuts": [
+        {
+          "beats": [3, 4], "seconds": 5, "size": "medium", "camera": "Pan Left",
+          "characters": ["C01", "C02"], "frame": "中景：同事捂鼻朝右挪开，女生尴尬站左。",
+          "shot": "镜头左摇，同事捂鼻挪开，女生低头。",
+          "lens": "50mm 标准", "cameraPosition": "双人平视", "composition": "三分法", "eyeline": "同事", "focus": "女生", "stability": "stable"
+        }
+      ]
+    },
+    {
+      "id": "E01-03",
+      "blocking": "女生在画面中，产品举到右前方。",
+      "cuts": [
+        {
+          "beats": [5, 6], "seconds": 5, "size": "close", "camera": "Push In",
+          "characters": ["C01"], "frame": "特写：女生手持洗发水瓶，瓶身清晰。",
+          "shot": "镜头推向女生手中的洗发水瓶。",
+          "lens": "85mm 长焦，极浅景深", "cameraPosition": "女生平视正面", "composition": "中心构图", "eyeline": "镜头", "focus": "瓶身", "stability": "stable"
+        }
+      ]
+    },
+    {
+      "id": "E01-04",
+      "blocking": "女生在画面左，泡沫特写在右。",
+      "cuts": [
+        {
+          "beats": [7, 8], "seconds": 5, "size": "extreme-close", "camera": "Static",
+          "characters": ["C01"], "frame": "大特写：泵头按出丰盈泡沫裹住发丝。",
+          "shot": "泡沫特写，女生旁白展示。",
+          "lens": "100mm 微距", "cameraPosition": "发丝俯拍", "composition": "中心构图", "eyeline": "发丝", "focus": "泡沫", "stability": "stable"
+        }
+      ]
+    },
+    {
+      "id": "E01-05",
+      "blocking": "分屏：左前一天右第三天，女生居中。",
+      "cuts": [
+        {
+          "beats": [9, 10], "seconds": 5, "size": "medium", "camera": "Static",
+          "characters": ["C01", "C02"], "frame": "中景分屏：左油头塌扁，右蓬松清爽，同事点头。",
+          "shot": "分屏对比，同事对女生点头。",
+          "lens": "50mm 标准", "cameraPosition": "双人平视", "composition": "对称", "eyeline": "彼此", "focus": "两人", "stability": "stable"
+        }
+      ]
+    },
+    {
+      "id": "E01-06",
+      "blocking": "女生在画面中央，产品举到胸前。",
+      "cuts": [
+        {
+          "beats": [11, 12], "seconds": 5, "size": "close", "camera": "Pull Out",
+          "characters": ["C01"], "frame": "特写转全景：女生举瓶笑对镜头。",
+          "shot": "镜头拉出，女生举瓶微笑。",
+          "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "中心构图", "eyeline": "镜头", "focus": "女生", "stability": "stable"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "product": "控油洗发水",
+  "query": "控油洗发水 抖音 爆款 种草 油头",
+  "sources": [
+    {
+      "platform": "douyin",
+      "url": "https://www.douyin.com/search/%E6%8E%A7%E6%B2%B9%E6%B4%97%E5%8F%91%E6%B0%B4",
+      "account": "（示例）美妆个护爆款号",
+      "metric": "点赞 30w+ / 评论区高频「求链接」",
+      "note": "前3秒甩头露油头直击痛点，第4段泵头起泡演示，第5段前后分屏对比"
+    }
+  ],
+  "viralBreakdown": [
+    { "stage": "hook", "hookType": "痛点直击", "seconds": "0-3", "what": "女生甩头，发丝油腻打绺，自嘲三天没洗头", "why": "油头人群秒共鸣，2秒不退" },
+    { "stage": "conflict", "hookType": "共鸣放大", "seconds": "3-10", "what": "同事捂鼻挪开，显脏十岁", "why": "把尴尬放大成具体社交困境" },
+    { "stage": "solution", "hookType": "转折", "seconds": "10-15", "what": "直到换了这瓶控油洗发水", "why": "抛出人设与解法钩子" },
+    { "stage": "product", "hookType": "卖点演示", "seconds": "15-30", "what": "泵头一按起泡，洗完三天不油", "why": "卖点可视化，看得见的泡沫与蓬松" },
+    { "stage": "trust", "hookType": "效果对比", "seconds": "30-40", "what": "第1天 vs 第3天分屏，同事实测", "why": "前后对比+背书双锚点" },
+    { "stage": "cta", "hookType": "升华+引导", "seconds": "40-45", "what": "举瓶笑对镜头，点左下活动价", "why": "情绪收尾+明确转化动作" }
+  ],
+  "borrow": [
+    "前3秒甩头露痛点（运动中给，不用静物）",
+    "同事捂鼻的社交尴尬冲突设定",
+    "第1天 vs 第3天分屏对比信任锚"
+  ],
+  "fallback": false
+}

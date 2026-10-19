@@ -1,0 +1,88 @@
+{
+  "product": "法式碎花连衣裙（夏天穿/花裙子/碎花裙）",
+  "sellingPoints": ["清凉薄（雪纺）", "显白（低饱和碎花）", "显瘦（收腰A字）", "平价百搭"],
+  "platform": "douyin",
+  "aspectRatio": "9:16",
+  "promptLang": "zh",
+  "targetSeconds": 45,
+  "researchRef": "碎花裙-research.json",
+  "params": {
+    "charsPerSecond": 4.5,
+    "actionSeconds": 2.5,
+    "tolerance": 0.15,
+    "maxLineChars": 35,
+    "hookWindow": 3,
+    "maxSegmentSeconds": 15,
+    "minCutSeconds": 2,
+    "maxCutSeconds": 5,
+    "maxOnScreen": 3
+  },
+  "stages": [
+    { "id": "hook", "label": "黄金3秒钩子", "goal": "2秒不退", "desc": "反差/痛点反转：别再嫌碎花裙显老显黑" },
+    { "id": "conflict", "label": "放大冲突", "goal": "5秒完播", "desc": "放大想穿又怕踩雷的焦虑" },
+    { "id": "solution", "label": "解法转折", "goal": "完播钩子", "desc": "引出低饱和碎花，莫奈花园氛围" },
+    { "id": "product", "label": "产品登场", "goal": "卖点可视化", "desc": "清凉薄/显白/显瘦逐一演示" },
+    { "id": "trust", "label": "信任锚点", "goal": "转化信任", "desc": "出片/约会场景背书" },
+    { "id": "cta", "label": "升华+行动召唤", "goal": "整体完播+转化", "desc": "平价价格锚 + 引导下单" }
+  ],
+  "beats": [
+    { "stage": "hook", "action": "女生在镜子前皱眉，拎着一件土气大花裙摇头。" },
+    { "stage": "hook", "speaker": "C01", "line": "别再嫌碎花裙显老显黑了，这条不一样。", "delivery": "自信" },
+    { "stage": "conflict", "action": "她翻出手机里去年踩雷的碎花裙买家秀，皱眉。" },
+    { "stage": "conflict", "speaker": "C01", "line": "高饱和大花、版型垮，穿上像隔壁阿姨。", "delivery": "自嘲" },
+    { "stage": "solution", "action": "她拎起这条低饱和碎花裙抖开，光落在裙面印花。" },
+    { "stage": "solution", "speaker": "C01", "line": "直到换了这条，像把莫奈花园穿身上。", "delivery": "转折" },
+    { "stage": "product", "action": "她穿上转身，裙摆扬起，雪纺透风。" },
+    { "stage": "product", "speaker": "C01", "line": "雪纺薄款，夏天穿不闷汗还带风。", "delivery": "展示" },
+    { "stage": "product", "action": "镜头推近腰线，收腰A字摆掐出细腰。" },
+    { "stage": "product", "speaker": "C01", "line": "收腰A字，胯宽腿粗一秒藏肉。", "delivery": "展示" },
+    { "stage": "product", "action": "分屏：左黄黑皮素颜，右穿裙后提亮显白。" },
+    { "stage": "product", "speaker": "C01", "line": "低饱和碎花，黄黑皮也白三个度。", "delivery": "展示" },
+    { "stage": "trust", "action": "她拿手机自拍，原图直出，背景虚化。" },
+    { "stage": "trust", "speaker": "C02", "line": "随手一拍就是大片，约会闺蜜都问链接。", "delivery": "背书" },
+    { "stage": "cta", "action": "她笑指左下，价格牌翻到活动价。" },
+    { "stage": "cta", "speaker": "C01", "line": "几十块穿出千元质感，点左下直接冲。", "delivery": "引导" }
+  ],
+  "segments": [
+    {
+      "id": "E01-01",
+      "blocking": "女生在试衣镜前，左手拎土气裙，右手拿新裙。",
+      "cuts": [
+        { "beats": [1, 1], "seconds": 2.5, "size": "medium", "camera": "Static", "characters": ["C01"], "frame": "中景：女生在试衣镜前皱眉，手里拎着一件土气大花裙摇头。", "shot": "女生对镜皱眉摇头，镜头固定。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "画面外", "focus": "女生上半身", "stability": "stable" },
+        { "beats": [2, 2], "seconds": 4.1, "size": "close", "camera": "Static", "characters": ["C01"], "frame": "近景：女生举起一条低饱和碎花裙对镜头，表情自信。", "shot": "女生举裙对镜头，语气自信。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "女生面部", "stability": "stable" },
+        { "beats": [3, 3], "seconds": 2.5, "size": "medium", "camera": "Static", "characters": ["C01"], "frame": "中景：女生翻手机里去年踩雷的碎花裙买家秀，皱眉。", "shot": "女生看手机皱眉，镜头固定。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "画面外", "focus": "女生上半身", "stability": "stable" },
+        { "beats": [4, 4], "seconds": 4.0, "size": "close", "camera": "Static", "characters": ["C01"], "frame": "近景：女生比划身上垮版型裙子，嫌弃表情。", "shot": "女生比划裙子嫌弃，镜头固定。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "衣角", "focus": "女生上半身", "stability": "stable" }
+      ]
+    },
+    {
+      "id": "E01-02",
+      "blocking": "女生居中，手拎新裙，光从右侧打来。",
+      "cuts": [
+        { "beats": [5, 5], "seconds": 2.5, "size": "medium", "camera": "Push In", "characters": ["C01"], "frame": "中景：女生拎起低饱和碎花裙抖开，光落在裙面印花。", "shot": "女生抖开碎花裙，光打在裙面，镜头轻推。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "画面外", "focus": "女生上半身", "stability": "stable" },
+        { "beats": [6, 6], "seconds": 3.8, "size": "close", "camera": "Static", "characters": ["C01"], "frame": "近景：女生把裙子贴身比了比，笑。", "shot": "女生比裙微笑，镜头固定。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "女生面部", "stability": "stable" },
+        { "beats": [7, 7], "seconds": 2.5, "size": "medium", "camera": "Static", "characters": ["C01"], "frame": "中景：女生穿上转身，雪纺裙摆扬起透风。", "shot": "女生转圈裙摆飞扬，镜头固定。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "画面外", "focus": "女生全身", "stability": "stable" },
+        { "beats": [8, 8], "seconds": 3.4, "size": "close", "camera": "Static", "characters": ["C01"], "frame": "近景：女生撩起裙角扇风，表情清凉。", "shot": "女生扇风显清凉，镜头固定。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "女生上半身", "stability": "stable" }
+      ]
+    },
+    {
+      "id": "E01-03",
+      "blocking": "女生居中，侧身展示腰线与裙摆。",
+      "cuts": [
+        { "beats": [9, 9], "seconds": 2.5, "size": "extreme-close", "camera": "Push In", "characters": ["C01"], "frame": "大特写：镜头推近腰线，收腰A字摆掐出细腰。", "shot": "镜头推近腰线收腰，展示显瘦。", "lens": "100mm 微距", "cameraPosition": "腰线平视微距", "composition": "中心构图", "eyeline": "腰线", "focus": "腰线", "stability": "stable" },
+        { "beats": [10, 10], "seconds": 3.2, "size": "medium", "camera": "Static", "characters": ["C01"], "frame": "中景：女生侧身展示A字裙摆遮胯，手叉腰。", "shot": "女生侧身展示裙摆，镜头固定。", "lens": "50mm 标准", "cameraPosition": "女生平视侧面", "composition": "三分法", "eyeline": "画面外", "focus": "女生全身", "stability": "stable" },
+        { "beats": [11, 11], "seconds": 2.5, "size": "medium", "camera": "Static", "characters": ["C01"], "frame": "分屏：左黄黑皮素颜，右穿碎花裙后提亮显白。", "shot": "分屏对比显白，镜头固定。", "lens": "50mm 标准", "cameraPosition": "分屏左右", "composition": "对称", "eyeline": "画面外", "focus": "两张脸", "stability": "stable" },
+        { "beats": [12, 12], "seconds": 3.4, "size": "close", "camera": "Static", "characters": ["C01"], "frame": "近景：女生对镜微笑，肤色透亮显白。", "shot": "女生对镜微笑显白，镜头固定。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "女生面部", "stability": "stable" }
+      ]
+    },
+    {
+      "id": "E01-04",
+      "blocking": "女生居中自拍，闺蜜入镜；收尾指左下。",
+      "cuts": [
+        { "beats": [13, 13], "seconds": 2.5, "size": "medium", "camera": "Static", "characters": ["C01"], "frame": "中景：女生拿手机自拍，原图直出，背景虚化。", "shot": "女生自拍出片，镜头固定。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "画面外", "focus": "女生上半身", "stability": "stable" },
+        { "beats": [14, 14], "seconds": 4.0, "size": "close", "camera": "Static", "characters": ["C02"], "frame": "近景：闺蜜凑近看手机照片，竖大拇指。", "shot": "闺蜜看照片竖拇指，镜头固定。", "lens": "50mm 标准", "cameraPosition": "闺蜜平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "闺蜜上半身", "stability": "stable" },
+        { "beats": [15, 15], "seconds": 2.5, "size": "medium", "camera": "Pull Out", "characters": ["C01"], "frame": "中景：女生笑指左下，价格牌翻到活动价。", "shot": "女生指左下翻价格牌，镜头拉出。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "女生上半身", "stability": "stable" },
+        { "beats": [16, 16], "seconds": 4.0, "size": "close", "camera": "Static", "characters": ["C01"], "frame": "近景：女生指左下购物箭头，笑脸。", "shot": "女生指左下引导下单，镜头固定。", "lens": "50mm 标准", "cameraPosition": "女生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "女生面部", "stability": "stable" }
+      ]
+    }
+  ]
+}
