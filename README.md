@@ -93,6 +93,24 @@ node scripts/selftest.mjs   # 12 项断言，不依赖模型调用
 └── examples/               自带样例（作为质量基准）
 ```
 
+## 关于 shuohao-skills（致谢与许可证）
+
+`product-drama` 的方法论源自开源项目 **[shuohao-skills](https://github.com/eternityspring/shuohao-skills)**，并在其基础上做了面向带货短视频的改造与精简。我们严格遵循其许可证 **Apache License 2.0** 的条款进行署名、标注修改与再分发。
+
+- **原作者 / 版权**：Copyright 2026 烁皓（eternityspring）
+- **许可证**：Apache License, Version 2.0（[全文](https://www.apache.org/licenses/LICENSE-2.0)）；本技能同样以 Apache-2.0 分发
+- **沿用并注明出处的方法论**：节拍流 + 时长预算、钩子冷开场、段→切→镜头提示词、H3 多图对齐写法、可插拔生成后端
+- **相较原项目的主要改动**（依据 Apache-2.0 第 4 条「显著标注修改」要求声明）：
+  1. 将原有 6 个串行 skill 整合为 1 个技能、3 个阶段（爆款调研 → 六段剧本 → 分镜投产）
+  2. 移除最耗时的 H3 逐字对账质量门，核心质量门由 18/10 道降为 8 道（可迭代、不卡死）
+  3. 新增「爆款调研」阶段：联网研判同类目爆款并拆解其结构
+  4. 将六段结构升级为留存导向的「黄金3秒钩子 → 放大冲突 → 解法转折 → 产品登场 → 信任锚点 → 升华 CTA」
+  5. 应用场景由「小说推文生产」调整为「带货短视频生产」
+- **许可证合规要点**：
+  - 再分发时须随附 `LICENSE`（Apache-2.0 全文）与 `NOTICE`（见仓库根目录）
+  - 对原方法论的修改已在上文显著标注（Apache-2.0 §4(b)）
+  - 未经授权，不得使用原作者名号或商标为衍生品背书（Apache-2.0 §4(d) 商标条款）
+
 ## License
 
-Apache-2.0。
+本技能以 **Apache License 2.0** 分发，完整文本见 [`LICENSE`](LICENSE)，署名与修改声明见 [`NOTICE`](NOTICE) 及上文「关于 shuohao-skills」一节。
