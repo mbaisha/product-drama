@@ -1,0 +1,84 @@
+{
+  "product": "冰丝薄款T恤（透气薄/男女通用/吸汗/便宜）",
+  "sellingPoints": ["透气薄", "男女通用", "吸汗", "价格便宜"],
+  "platform": "douyin",
+  "aspectRatio": "9:16",
+  "promptLang": "zh",
+  "targetSeconds": 45,
+  "researchRef": "T恤-research.json",
+  "params": {
+    "charsPerSecond": 4.5,
+    "actionSeconds": 2.5,
+    "tolerance": 0.15,
+    "maxLineChars": 35,
+    "hookWindow": 3,
+    "maxSegmentSeconds": 15,
+    "minCutSeconds": 2,
+    "maxCutSeconds": 5,
+    "maxOnScreen": 3
+  },
+  "stages": [
+    { "id": "hook", "label": "黄金3秒钩子", "goal": "2秒不退", "desc": "场景代入+反差，第一拍给汗湿运动画面" },
+    { "id": "conflict", "label": "放大冲突", "goal": "5秒完播", "desc": "把闷汗放大成具体社交困境" },
+    { "id": "solution", "label": "解法转折", "goal": "完播钩子", "desc": "抛出转折，引出「呼吸感短袖」" },
+    { "id": "product", "label": "产品登场", "goal": "卖点可视化", "desc": "薄/透气/吸汗/男女通用逐一演示" },
+    { "id": "trust", "label": "信任锚点", "goal": "转化信任", "desc": "前后对比 + 同事实测背书" },
+    { "id": "cta", "label": "升华+行动召唤", "goal": "整体完播+转化", "desc": "价格锚 + 库存稀缺 + 引导下单" }
+  ],
+  "beats": [
+    { "stage": "hook", "action": "男生刚出地铁口，后背T恤湿透贴脊背。" },
+    { "stage": "hook", "speaker": "C01", "line": "刚出地铁后背就湿透，谁懂这种尴尬。", "delivery": "自嘲" },
+    { "stage": "conflict", "action": "同事凑近又皱眉，悄悄挪远半步。" },
+    { "stage": "conflict", "speaker": "C01", "line": "闷汗黏身，一天换三件还是潮乎乎。", "delivery": "自嘲" },
+    { "stage": "solution", "action": "他拎起一件轻薄T恤抖开，衣料迎风飘。" },
+    { "stage": "solution", "speaker": "C01", "line": "直到换了这件，像给身上装了排气扇。", "delivery": "转折" },
+    { "stage": "product", "action": "镜头推近，手指捏起冰丝面料对着光，薄透见指影。" },
+    { "stage": "product", "speaker": "C01", "line": "冰丝薄款，透气到像穿了空调。", "delivery": "展示" },
+    { "stage": "product", "action": "他左右各举一件同款T恤，演示男女同款。" },
+    { "stage": "product", "speaker": "C01", "line": "男生女生都能穿，70到220斤都行。", "delivery": "展示" },
+    { "stage": "trust", "action": "分屏：左普通T恤汗渍地图，右冰丝T恤干爽挺括。" },
+    { "stage": "trust", "speaker": "C02", "line": "同事实测，暴走一天后背还是干的。", "delivery": "背书" },
+    { "stage": "cta", "action": "他笑对镜头，把价格牌翻到活动价。" },
+    { "stage": "cta", "speaker": "C01", "line": "日常59今天19块9，点左下直接冲。", "delivery": "引导" }
+  ],
+  "segments": [
+    {
+      "id": "E01-01",
+      "blocking": "男生在画面左，地铁口人流虚化在右后。",
+      "cuts": [
+        { "beats": [1, 1], "seconds": 2.5, "size": "medium", "camera": "Static", "characters": ["C01"], "frame": "中景：年轻男生刚出地铁口，后背T恤湿透贴脊背，额角有汗。", "shot": "男生走出地铁口，后背衣服湿透贴在身上，镜头固定。", "lens": "50mm 标准", "cameraPosition": "男生平视正面", "composition": "三分法", "eyeline": "画面外", "focus": "男生上半身", "stability": "stable" },
+        { "beats": [2, 2], "seconds": 3.8, "size": "close", "camera": "Static", "characters": ["C01"], "frame": "近景：男生回头苦笑，地铁人流虚化成光斑。", "shot": "男生回头自嘲苦笑，镜头固定。", "lens": "50mm 标准", "cameraPosition": "男生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "男生面部", "stability": "stable" },
+        { "beats": [3, 3], "seconds": 2.5, "size": "medium", "camera": "Pan Left", "characters": ["C01", "C02"], "frame": "中景：同事凑近又皱眉，往右挪开半步。", "shot": "镜头左摇，同事靠近后皱眉，往右挪开。", "lens": "50mm 标准", "cameraPosition": "双人平视", "composition": "三分法", "eyeline": "彼此", "focus": "两人", "stability": "stable" },
+        { "beats": [4, 4], "seconds": 3.6, "size": "close", "camera": "Static", "characters": ["C01"], "frame": "近景：男生低头看自己潮乎乎的衣角。", "shot": "男生低头看衣角，镜头固定。", "lens": "50mm 标准", "cameraPosition": "男生平视正面", "composition": "三分法", "eyeline": "衣角", "focus": "男生上半身", "stability": "stable" }
+      ]
+    },
+    {
+      "id": "E01-02",
+      "blocking": "男生居中，手拎轻薄T恤，光从右侧打来。",
+      "cuts": [
+        { "beats": [5, 5], "seconds": 2.5, "size": "medium", "camera": "Push In", "characters": ["C01"], "frame": "中景：男生拎起一件轻薄T恤抖开，衣料迎风飘动。", "shot": "男生抖开轻薄T恤，衣料飘动，镜头轻推。", "lens": "50mm 标准", "cameraPosition": "男生平视正面", "composition": "三分法", "eyeline": "画面外", "focus": "男生上半身", "stability": "stable" },
+        { "beats": [6, 6], "seconds": 3.8, "size": "close", "camera": "Static", "characters": ["C01"], "frame": "近景：男生举T恤对镜头，表情轻松。", "shot": "男生举T恤对镜头，语气轻松。", "lens": "50mm 标准", "cameraPosition": "男生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "男生面部", "stability": "stable" },
+        { "beats": [7, 7], "seconds": 2.5, "size": "extreme-close", "camera": "Push In", "characters": [], "frame": "大特写：手指捏起冰丝面料对着光，薄透可见指影。", "shot": "镜头推近，手指捏面料透光，展示薄。", "lens": "100mm 微距", "cameraPosition": "面料平视微距", "composition": "中心构图", "eyeline": "面料", "focus": "面料", "stability": "stable" }
+      ]
+    },
+    {
+      "id": "E01-03",
+      "blocking": "男生居中，左右手各举一件同款T恤。",
+      "cuts": [
+        { "beats": [8, 8], "seconds": 3.2, "size": "medium", "camera": "Static", "characters": ["C01"], "frame": "中景：男生穿冰丝T恤迎风扇风，衣服轻飘不贴身。", "shot": "男生穿冰丝T恤扇风，镜头固定。", "lens": "50mm 标准", "cameraPosition": "男生平视正面", "composition": "三分法", "eyeline": "画面外", "focus": "男生上半身", "stability": "stable" },
+        { "beats": [9, 9], "seconds": 2.5, "size": "medium", "camera": "Static", "characters": ["C01"], "frame": "中景：男生左右各举一件同款T恤演示，男女同款。", "shot": "男生举起两件同款T恤，左右展示。", "lens": "50mm 标准", "cameraPosition": "男生平视正面", "composition": "中心构图", "eyeline": "画面外", "focus": "两件T恤", "stability": "stable" },
+        { "beats": [10, 10], "seconds": 4.1, "size": "close", "camera": "Static", "characters": ["C01"], "frame": "近景：男生比划身形跨度，示意从瘦到壮都穿得下。", "shot": "男生比划身形跨度，镜头固定。", "lens": "50mm 标准", "cameraPosition": "男生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "男生上半身", "stability": "stable" }
+      ]
+    },
+    {
+      "id": "E01-04",
+      "blocking": "分屏：左普通T恤/右冰丝T恤；收尾男生居中。",
+      "cuts": [
+        { "beats": [11, 11], "seconds": 2.5, "size": "medium", "camera": "Static", "characters": [], "frame": "分屏：左普通T恤汗渍地图，右冰丝T恤干爽挺括。", "shot": "分屏对比，左汗渍右干爽，镜头固定。", "lens": "50mm 标准", "cameraPosition": "分屏左右", "composition": "对称", "eyeline": "画面外", "focus": "两件T恤", "stability": "stable" },
+        { "beats": [12, 12], "seconds": 3.6, "size": "close", "camera": "Static", "characters": ["C02"], "frame": "近景：同事点头竖大拇指，后背干爽。", "shot": "同事点头竖拇指，镜头固定。", "lens": "50mm 标准", "cameraPosition": "同事平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "同事上半身", "stability": "stable" },
+        { "beats": [13, 13], "seconds": 2.5, "size": "medium", "camera": "Pull Out", "characters": ["C01"], "frame": "中景：男生笑对镜头，把价格牌翻到活动价。", "shot": "男生笑对镜头，翻转价格牌，镜头拉出。", "lens": "50mm 标准", "cameraPosition": "男生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "男生上半身", "stability": "stable" },
+        { "beats": [14, 14], "seconds": 4.0, "size": "close", "camera": "Static", "characters": ["C01"], "frame": "近景：男生指左下角购物箭头，笑脸。", "shot": "男生指向左下角，引导下单，镜头固定。", "lens": "50mm 标准", "cameraPosition": "男生平视正面", "composition": "三分法", "eyeline": "镜头", "focus": "男生面部", "stability": "stable" }
+      ]
+    }
+  ]
+}
